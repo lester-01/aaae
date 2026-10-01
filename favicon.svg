@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Jasiri">
+  <rect width="512" height="512" rx="116" fill="#16110d"/>
+  <path d="M312 208v118c0 52-34 84-84 84-30 0-54-11-72-31" fill="none" stroke="#f6f1e7" stroke-width="68" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="278" y="88" width="68" height="68" rx="14" fill="#ff6b2c"/>
+</svg>
