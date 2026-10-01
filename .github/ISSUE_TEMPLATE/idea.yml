@@ -1,0 +1,11 @@
+name: Idea or plugin request
+description: Tell me what you want Jasiri to do
+labels: [idea]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What do you want to do?
+      description: Describe it in your own words. Plain language is fine.
+    validations:
+      required: true

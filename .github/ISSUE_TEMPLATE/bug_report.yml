@@ -1,0 +1,24 @@
+name: Bug report
+description: Something in Jasiri does not work
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Jasiri version
+      description: Settings, About
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Phone and Android version
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what you saw. Do not include API keys.
+    validations:
+      required: true

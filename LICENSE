@@ -1,0 +1,28 @@
+Jasiri
+Copyright (c) 2026 Ben Lester. All rights reserved.
+
+Jasiri is proprietary software distributed in binary form. This repository
+contains its website and release downloads, not its source code.
+
+Free for individuals
+  You may install and use Jasiri on devices you own or control, at no charge,
+  including for your own professional or freelance work.
+
+A license from the author is required to
+  - use Jasiri on behalf of a company or team, or deploy it across an
+    organization's devices;
+  - redistribute, resell, rent, or sublicense Jasiri;
+  - host Jasiri for others to use as a service;
+  - build a competing product with it.
+
+You may not decompile or reverse engineer Jasiri's own code except where the
+law allows it regardless of this notice.
+
+Third-party components inside Jasiri are licensed under their own terms, which
+are listed at https://aaae.benlester.me/licenses/. Nothing here limits the
+rights those licenses give you.
+
+The software is provided "as is", without warranty of any kind.
+
+The full terms are at https://aaae.benlester.me/terms/.
+To ask about a license: contact@benlester.me
