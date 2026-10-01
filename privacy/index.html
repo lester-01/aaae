@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy | Jasiri</title>
+<meta name="description" content="What Jasiri collects, what it does not, and where your data goes.">
+<meta name="theme-color" content="#f6f1e7">
+<link rel="canonical" href="https://aaae.benlester.me/privacy/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/styles.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jasiri">
+<meta property="og:title" content="Privacy | Jasiri">
+<meta property="og:description" content="What Jasiri collects, what it does not, and where your data goes.">
+<meta property="og:url" content="https://aaae.benlester.me/privacy/">
+<meta property="og:image" content="https://aaae.benlester.me/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Jasiri. Put your phone to work.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Privacy | Jasiri">
+<meta name="twitter:description" content="What Jasiri collects, what it does not, and where your data goes.">
+<meta name="twitter:image" content="https://aaae.benlester.me/assets/og.png">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/icon.svg" alt="" width="34" height="34">Jasiri</a>
+    <nav aria-label="Main">
+      <a href="/#how">How it works</a>
+      <a href="/#today">What it does</a>
+      <a href="/plugins/">Plugins</a>
+      <a href="/#faq">FAQ</a>
+    </nav>
+    <a class="btn small" href="https://aaae-dl.benlester.me/aaae-sideload.apk">Download</a>
+  </div>
+</header>
+<main id="main">
+  <section class="page-hero"><div class="wrap"><span class="eyebrow">Legal</span><h1>Privacy</h1></div></section>
+  <div class="wrap"><div class="prose">
+
+<p class="meta">Last updated 1 October 2026</p>
+<p>The short version: Jasiri has no account, no ads, and no analytics. Your project files stay on your phone. The messages you send the agent go to the AI provider you choose, and nowhere else.</p>
+
+<h2>What stays on your phone</h2>
+<ul>
+<li>The Linux system, your project folders, and everything the agent writes.</li>
+<li>Your AI provider key and any SSH keys you create. Jasiri opts out of Android backups, so they are not copied to the cloud.</li>
+<li>Uninstalling Jasiri removes all of it.</li>
+</ul>
+
+<h2>What goes to your AI provider</h2>
+<p>When you ask the agent for something, Jasiri sends your message, any attachments, and the output of commands the agent runs to the service you configured (OpenRouter, OpenAI, or another compatible service), using the key you pasted. That provider processes it under its own terms and privacy policy. Pick a provider you trust. We do not operate that service and do not receive a copy.</p>
+
+<h2>What Jasiri collects</h2>
+<p>Nothing about you. There are no accounts, no advertising identifiers, no analytics, and no crash reporting in the current version.</p>
+
+<h2>Network requests Jasiri makes</h2>
+<ul>
+<li><strong>Update check.</strong> When you open the app, it reads a small public file from <code>aaae.benlester.me/policy.json</code> to learn the latest version. The file is the same for everyone. Like any web request, your IP address is visible to the host (GitHub Pages and Cloudflare) in their ordinary logs.</li>
+<li><strong>Your AI provider</strong>, as described above.</li>
+<li><strong>Package downloads.</strong> When you or the agent install software, Jasiri downloads packages over HTTPS from the package servers for its Linux system.</li>
+<li><strong>Anything you or the agent run.</strong> The terminal is a real computer. If a command connects to the internet, that connection is made by you.</li>
+</ul>
+
+<h2>This website</h2>
+<p>This site sets no cookies and runs no analytics. Fonts are served from this site, not a third party. The site is hosted on GitHub Pages and downloads are served from GitHub Releases through a Cloudflare redirect. Those services keep their own standard logs.</p>
+
+<h2>If this changes</h2>
+<p>If Jasiri ever collects diagnostics or usage data, it will be opt-in, it will never include your prompts, files, or keys, and this page will say so before the change ships. A launch-updates email list is planned. If it launches, this page will explain what is stored and how to unsubscribe.</p>
+
+<h2>Children</h2>
+<p>Jasiri is not designed for children.</p>
+
+<h2>Contact</h2>
+<p>Questions or requests: <a href="mailto:contact@benlester.me">contact@benlester.me</a>. Ben Lester, Cyprus.</p>
+
+  </div></div>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="brand" href="/"><img src="/assets/icon.svg" alt="" width="34" height="34">Jasiri</a>
+        <p>An AI agent with its own Linux computer inside your Android phone. Free for individuals.</p>
+        <p>Built by <a href="https://benlester.me">Ben Lester</a>.</p>
+      </div>
+      <div>
+        <h4>Jasiri</h4>
+        <ul>
+          <li><a href="/#how">How it works</a></li>
+          <li><a href="/plugins/">Plugins</a></li>
+          <li><a href="https://aaae-dl.benlester.me/aaae-sideload.apk">Download</a></li>
+          <li><a href="https://github.com/lester-01/aaae/releases">All releases</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/privacy/">Privacy</a></li>
+          <li><a href="/terms/">Terms and license</a></li>
+          <li><a href="/licenses/">Open-source notices</a></li>
+          <li><a href="mailto:contact@benlester.me">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <p>&copy; 2026 Ben Lester. All rights reserved.</p>
+      <p>Android is a trademark of Google LLC. Jasiri is an independent app and is not affiliated with Google.</p>
+    </div>
+  </div>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>
