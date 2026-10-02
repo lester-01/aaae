@@ -5,10 +5,10 @@
   "latestVersionCode": 37,
   "latestVersionName": "0.2.11",
   "block": "app",
-  "message": "This build is retired. Paste this in Chrome if Update closes:\nhttps://aaae-dl.benlester.me/aaae-sideload.apk",
+  "message": "This build is retired. Paste this in Chrome if Update closes:\nhttps://jasiri-dl.benlester.me/jasiri-sideload.apk",
   "package": "app.aaae",
   "sideload": {
-    "url": "https://aaae-dl.benlester.me/aaae-sideload.apk"
+    "url": "https://jasiri-dl.benlester.me/jasiri-sideload.apk"
   },
   "play": {
     "listed": false,

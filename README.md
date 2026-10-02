@@ -8,10 +8,10 @@
 An AI agent with its own Linux computer inside your Android phone.</p>
 
 <p align="center">
-  <a href="https://aaae.benlester.me">Website</a> ·
-  <a href="https://aaae-dl.benlester.me/aaae-sideload.apk">Download for Android</a> ·
+  <a href="https://jasiri.benlester.me">Website</a> ·
+  <a href="https://jasiri-dl.benlester.me/jasiri-sideload.apk">Download for Android</a> ·
   <a href="https://github.com/lester-01/aaae/releases">Releases</a> ·
-  <a href="https://aaae.benlester.me/plugins/">Plugins</a>
+  <a href="https://jasiri.benlester.me/plugins/">Plugins</a>
 </p>
 
 ---
@@ -34,15 +34,15 @@ Each release lists a SHA-256 checksum for the APK. Jasiri is not on Google Play 
 - Includes a full terminal on the same system, with a normal package manager.
 - Works with your clipboard, and reachable over SSH from your laptop.
 
-Plugins (search your media in plain language, notes, backups, video shrinking, learning labs) are planned. See the [plugin plans](https://aaae.benlester.me/plugins/).
+Plugins (search your media in plain language, notes, backups, video shrinking, learning labs) are planned. See the [plugin plans](https://jasiri.benlester.me/plugins/).
 
 ## Privacy
 
-No account, no ads, no analytics. Your project files stay on your phone. Messages go to the AI provider you choose, with your own key. Details: [privacy](https://aaae.benlester.me/privacy/).
+No account, no ads, no analytics. Your project files stay on your phone. Messages go to the AI provider you choose, with your own key. Details: [privacy](https://jasiri.benlester.me/privacy/).
 
 ## License
 
-Free for individuals, including for your own professional work. Teams and companies need a license. This is closed-source software distributed in binary form. See the [terms](https://aaae.benlester.me/terms/), the [license summary](LICENSE), and the [open-source notices](https://aaae.benlester.me/licenses/).
+Free for individuals, including for your own professional work. Teams and companies need a license. This is closed-source software distributed in binary form. See the [terms](https://jasiri.benlester.me/terms/), the [license summary](LICENSE), and the [third-party notices](NOTICES.md).
 
 ## Feedback
 
@@ -50,7 +50,7 @@ Bugs, ideas, and plugin requests are welcome through [issues](https://github.com
 
 ## About this repository
 
-This repository hosts the website at [aaae.benlester.me](https://aaae.benlester.me) and the release downloads. It does not contain the app's source code.
+This repository hosts the website at [jasiri.benlester.me](https://jasiri.benlester.me) and the release downloads. It does not contain the app's source code.
 
 `policy.json` is read by installed copies of the app to check for updates. Please do not move or rename it.
 
