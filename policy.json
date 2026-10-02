@@ -1,11 +1,11 @@
 {
   "_comment": "minVersionCode retires older clients. latestVersionCode is the optional banner. Sideload URL is the Cloudflare hop, never github.com.",
-  "minVersionCode": 35,
-  "minVersionName": "0.2.9",
-  "latestVersionCode": 37,
-  "latestVersionName": "0.2.11",
+  "minVersionCode": 0,
+  "minVersionName": "",
+  "latestVersionCode": 0,
+  "latestVersionName": "",
   "block": "app",
-  "message": "This build is retired. Paste this in Chrome if Update closes:\nhttps://jasiri-dl.benlester.me/jasiri-sideload.apk",
+  "message": "This build is retired. Install the latest version from the link below.",
   "package": "app.aaae",
   "sideload": {
     "url": "https://jasiri-dl.benlester.me/jasiri-sideload.apk"
