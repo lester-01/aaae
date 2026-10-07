@@ -26,6 +26,22 @@ Ask in plain English and the agent builds, fixes, organizes, and tests your idea
 
 Each release lists a SHA-256 checksum for the APK. Jasiri is not on Google Play yet.
 
+## Check the APK
+
+The release page lists the SHA-256 of `jasiri-sideload.apk`. After you download the file:
+
+```
+sha256sum jasiri-sideload.apk
+```
+
+On Windows:
+
+```
+Get-FileHash jasiri-sideload.apk -Algorithm SHA256
+```
+
+The hash should match the release notes and the `sideload.sha256` value in `policy.json`. The same hash can be opened on VirusTotal as `https://www.virustotal.com/gui/file/` followed by the lowercase hex, with no spaces. That page shows what public scanners reported for the file.
+
 ## What it does today
 
 - Builds sites, scripts, and tools from a description, runs them, and shows you.

@@ -2,14 +2,15 @@
   "_comment": "minVersionCode retires older clients. latestVersionCode is the optional banner. Sideload URL is the Cloudflare hop, never github.com.",
   "minVersionCode": 39,
   "minVersionName": "0.3.0",
-  "latestVersionCode": 41,
-  "latestVersionName": "0.5.0",
-  "whatsNew": "The assistant keeps phone folders separate from the Linux environment, and no longer opens the folder picker on its own.",
+  "latestVersionCode": 42,
+  "latestVersionName": "0.6.0",
+  "whatsNew": "Updates download inside Jasiri, with a progress bar and a check of the published SHA-256 before install.",
   "block": "app",
   "message": "This build is retired. Install the latest version from the link below.",
   "package": "app.aaae",
   "sideload": {
-    "url": "https://jasiri-dl.benlester.me/jasiri-sideload.apk"
+    "url": "https://jasiri-dl.benlester.me/jasiri-sideload.apk",
+    "sha256": "42f56e6d4e13c11f95033204bffdfcd539314215361a68e49b58b0188ea2e5b6"
   },
   "play": {
     "listed": false,
