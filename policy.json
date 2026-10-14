@@ -2,15 +2,15 @@
   "_comment": "minVersionCode retires older clients. latestVersionCode is the optional banner. Sideload URL is the Cloudflare hop, never github.com.",
   "minVersionCode": 39,
   "minVersionName": "0.3.0",
-  "latestVersionCode": 44,
-  "latestVersionName": "0.7.0",
-  "whatsNew": "This update installs as a new app. It does not replace the copy already on your phone.",
+  "latestVersionCode": 45,
+  "latestVersionName": "0.7.1",
+  "whatsNew": "Opening a web page in the app works again.",
   "block": "app",
   "message": "This build is retired. Install the latest version from the link below.",
   "package": "app.jasiri",
   "sideload": {
     "url": "https://jasiri-dl.benlester.me/jasiri-sideload.apk",
-    "sha256": "8de8b7697655488233f9f391196a263daddec51fe1b3039744dc481ef30037f6"
+    "sha256": "b2211a950383f7391889e5dad0d9749ca3cb1f528c2682a8ea9ebe774a10c35c"
   },
   "play": {
     "listed": false,
