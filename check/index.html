@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Check the APK | Jasiri</title>
+<meta name="description" content="How to check a Jasiri download: the file hash, the signing certificate, and VirusTotal.">
+<meta name="theme-color" content="#f6f1e7">
+<link rel="canonical" href="https://jasiri.benlester.me/check/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/styles.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jasiri">
+<meta property="og:title" content="Check the APK | Jasiri">
+<meta property="og:description" content="How to check a Jasiri download: the file hash, the signing certificate, and VirusTotal.">
+<meta property="og:url" content="https://jasiri.benlester.me/check/">
+<meta property="og:image" content="https://jasiri.benlester.me/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Jasiri. Put your phone to work.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Check the APK | Jasiri">
+<meta name="twitter:description" content="How to check a Jasiri download: the file hash, the signing certificate, and VirusTotal.">
+<meta name="twitter:image" content="https://jasiri.benlester.me/assets/og.png">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/icon.svg" alt="" width="34" height="34">Jasiri</a>
+    <nav aria-label="Main">
+      <a href="/#how">How it works</a>
+      <a href="/#today">What it does</a>
+      <a href="/plugins/">Plugins</a>
+      <a href="/#faq">FAQ</a>
+    </nav>
+    <a class="btn small" href="https://jasiri-dl.benlester.me/jasiri-sideload.apk">Download</a>
+  </div>
+</header>
+<main id="main">
+  <section class="page-hero"><div class="wrap"><span class="eyebrow">Download</span><h1>Check the APK</h1></div></section>
+  <div class="wrap"><div class="prose">
+
+<p class="meta">Last updated 15 October 2026</p>
+<p>The download is one file, <code>jasiri-sideload.apk</code>. These checks compare that file with the published release. They do not send the file to Jasiri. This page sets no cookies and runs no analytics. The <a href="/privacy/">privacy</a> page says how the site is hosted.</p>
+
+<h2>File hash</h2>
+<p>Each release lists a SHA-256 checksum for the file. The same value is <code>sideload.sha256</code> in <a href="/policy.json">policy.json</a>, which is the small file installed copies of Jasiri read when they look for an update. Compute the hash of the file you downloaded and compare. The two strings should match, letter for letter.</p>
+
+<div class="term" aria-label="Hash the APK on Linux or macOS">
+  <header><i></i><i></i><i></i></header>
+<pre><span class="p">$</span> sha256sum jasiri-sideload.apk</pre>
+</div>
+
+<p>On Windows, in PowerShell:</p>
+
+<div class="term" aria-label="Hash the APK on Windows">
+  <header><i></i><i></i><i></i></header>
+<pre><span class="p">PS&gt;</span> Get-FileHash jasiri-sideload.apk -Algorithm SHA256</pre>
+</div>
+
+<p>The release notes are on the <a href="https://github.com/lester-01/aaae/releases/latest">latest release</a>. PowerShell prints the hash in capitals. Lowercase is the same value.</p>
+
+<h2>Signing certificate</h2>
+<p>The file is signed. This fingerprint is the signing certificate, and it stays the same from one version to the next. It is not a secret. A file can have the right name and the wrong signature. If the hash matches the release and this fingerprint matches too, the file is the one that was published.</p>
+<p>SHA-256:</p>
+<p class="fingerprint">80db1f0580c90d3bb7ec1d06ef1daa9810e8e8e0bdab80ebde9a2ae7e1823202</p>
+<p>The same fingerprint, with colons, which is how the tools below print it:</p>
+<p class="fingerprint">80:DB:1F:05:80:C9:0D:3B:B7:EC:1D:06:EF:1D:AA:98:10:E8:E8:E0:BD:AB:80:EB:DE:9A:2A:E7:E1:82:32:02</p>
+<p>If Java is installed:</p>
+
+<div class="term" aria-label="Print the APK signing certificate">
+  <header><i></i><i></i><i></i></header>
+<pre><span class="p">$</span> keytool -printcert -jarfile jasiri-sideload.apk</pre>
+</div>
+
+<p>Look for the SHA256 line under the certificate fingerprints. With the Android SDK, <code>apksigner verify --print-certs jasiri-sideload.apk</code> prints the same line.</p>
+
+<h2>VirusTotal</h2>
+<p>You can also look the hash up on VirusTotal. Take the lowercase SHA-256 from the first check, with no spaces, and add it to the end of this address:</p>
+<p class="fingerprint">https://www.virustotal.com/gui/file/</p>
+<p>That page shows what public scanners reported for the file. VirusTotal runs it. Jasiri does not receive a copy.</p>
+
+  </div></div>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="brand" href="/"><img src="/assets/icon.svg" alt="" width="34" height="34">Jasiri</a>
+        <p>An AI agent with its own Linux computer inside your Android phone. Free for individuals.</p>
+        <p>Built by <a href="https://benlester.me">Ben Lester</a>.</p>
+      </div>
+      <div>
+        <h4>Jasiri</h4>
+        <ul>
+          <li><a href="/#how">How it works</a></li>
+          <li><a href="/plugins/">Plugins</a></li>
+          <li><a href="https://jasiri-dl.benlester.me/jasiri-sideload.apk">Download</a></li>
+          <li><a href="https://github.com/lester-01/aaae/releases">All releases</a></li>
+          <li><a href="/check/">Check the APK</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/privacy/">Privacy</a></li>
+          <li><a href="/terms/">Terms and license</a></li>
+          <li><a href="mailto:contact@benlester.me">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <p>&copy; 2026 Ben Lester. All rights reserved.</p>
+      
+    </div>
+  </div>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

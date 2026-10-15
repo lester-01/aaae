@@ -28,6 +28,8 @@ Each release lists a SHA-256 checksum for the APK. Jasiri is not on Google Play 
 
 ## Check the APK
 
+The same steps are on the website: [jasiri.benlester.me/check](https://jasiri.benlester.me/check/).
+
 The release page lists the SHA-256 of `jasiri-sideload.apk`. After you download the file:
 
 ```
@@ -40,7 +42,11 @@ On Windows:
 Get-FileHash jasiri-sideload.apk -Algorithm SHA256
 ```
 
-The hash should match the release notes and the `sideload.sha256` value in `policy.json`. The same hash can be opened on VirusTotal as `https://www.virustotal.com/gui/file/` followed by the lowercase hex, with no spaces. That page shows what public scanners reported for the file.
+The hash should match the release notes and the `sideload.sha256` value in [`policy.json`](https://jasiri.benlester.me/policy.json).
+
+The signing certificate SHA-256 is `80db1f0580c90d3bb7ec1d06ef1daa9810e8e8e0bdab80ebde9a2ae7e1823202`. It does not change between versions. `keytool -printcert -jarfile jasiri-sideload.apk` prints that fingerprint with colons.
+
+The same hash can be opened on VirusTotal as `https://www.virustotal.com/gui/file/` followed by the lowercase hex, with no spaces. That page shows what public scanners reported for the file.
 
 ## What it does today
 
