@@ -46,7 +46,7 @@ The hash should match the release notes and the `sideload.sha256` value in [`pol
 
 The signing certificate SHA-256 is `80db1f0580c90d3bb7ec1d06ef1daa9810e8e8e0bdab80ebde9a2ae7e1823202`. It does not change between versions. `keytool -printcert -jarfile jasiri-sideload.apk` prints that fingerprint with colons.
 
-The same hash can be opened on VirusTotal as `https://www.virustotal.com/gui/file/` followed by the lowercase hex, with no spaces. That page shows what public scanners reported for the file.
+To see what public scanners report, upload the file at <https://www.virustotal.com/gui/home/upload>. The APK is about 57 MB. That page can warn about a few megabytes and still accept the file. VirusTotal’s large upload accepts up to 650 MB.
 
 ## What it does today
 
