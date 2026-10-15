@@ -2,15 +2,15 @@
   "_comment": "minVersionCode retires older clients. latestVersionCode is the optional banner. Sideload URL is the Cloudflare hop, never github.com.",
   "minVersionCode": 39,
   "minVersionName": "0.3.0",
-  "latestVersionCode": 47,
-  "latestVersionName": "0.9.0",
-  "whatsNew": "Page scripts work again. A tool turns off if its permission stopped working after an update.",
+  "latestVersionCode": 48,
+  "latestVersionName": "0.9.1",
+  "whatsNew": "The update notice names the build. A zip path from the chat folder is not nested again.",
   "block": "app",
   "message": "This build is retired. Install the latest version from the link below.",
   "package": "app.jasiri",
   "sideload": {
     "url": "https://jasiri-dl.benlester.me/jasiri-sideload.apk",
-    "sha256": "8abfe33c866905a14c1c3889a4bc21f24a50374ae529cc576c86fc9f5adbf623"
+    "sha256": "81bb002ee78d8ae6b675889d308c027b47205c48dce4cba393c431ca0bbd09ac"
   },
   "play": {
     "listed": false,
