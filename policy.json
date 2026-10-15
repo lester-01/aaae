@@ -2,15 +2,15 @@
   "_comment": "minVersionCode retires older clients. latestVersionCode is the optional banner. Sideload URL is the Cloudflare hop, never github.com.",
   "minVersionCode": 39,
   "minVersionName": "0.3.0",
-  "latestVersionCode": 50,
-  "latestVersionName": "0.11.0",
-  "whatsNew": "Settings explains Allow restricted settings before opening App info. The assistant can ask several questions, one at a time. How to check the download is on the website.",
+  "latestVersionCode": 51,
+  "latestVersionName": "0.12.0",
+  "whatsNew": "Notification access and Screen control ask about Allow restricted settings first. The switch stays off until the check passes. The check page links to the VirusTotal report.",
   "block": "app",
   "message": "This build is retired. Install the latest version from the link below.",
   "package": "app.jasiri",
   "sideload": {
     "url": "https://jasiri-dl.benlester.me/jasiri-sideload.apk",
-    "sha256": "4eb7c2d4be2987a4535828fc3128f190fea97c0798dd956929197b24602e36c1"
+    "sha256": "3fcfa50bda90d8d71e2016b32f4295354aedd33ec46641b777a76e1f725b75f2"
   },
   "play": {
     "listed": false,
