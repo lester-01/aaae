@@ -2,15 +2,15 @@
   "_comment": "minVersionCode retires older clients. latestVersionCode is the optional banner. Sideload URL is the Cloudflare hop, never github.com.",
   "minVersionCode": 39,
   "minVersionName": "0.3.0",
-  "latestVersionCode": 52,
-  "latestVersionName": "0.13.0",
-  "whatsNew": "A long chat is shortened so it fits the model. The conversation on screen stays complete. The session notice shows whether the wake lock is on.",
+  "latestVersionCode": 55,
+  "latestVersionName": "0.14.0",
+  "whatsNew": "Your messages are highlighted and can be copied. You can shorten a long chat, and download a skill from a link.",
   "block": "app",
   "message": "This build is retired. Install the latest version from the link below.",
   "package": "app.jasiri",
   "sideload": {
     "url": "https://jasiri-dl.benlester.me/jasiri-sideload.apk",
-    "sha256": "6e3aa42b491471202adf8cb41e6c4615b092b67ef0dda695c2a7c5ab61fe38fa"
+    "sha256": "a82ff8076d65e48a2668741349d14ab2db201457050acfbffbb2f7003f3e2bf7"
   },
   "play": {
     "listed": false,
