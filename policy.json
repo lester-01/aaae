@@ -2,15 +2,15 @@
   "_comment": "minVersionCode retires older clients. latestVersionCode is the optional banner. Sideload URL is the Cloudflare hop, never github.com.",
   "minVersionCode": 39,
   "minVersionName": "0.3.0",
-  "latestVersionCode": 57,
-  "latestVersionName": "0.16.0",
-  "whatsNew": "Your messages stand apart from replies. The total above the box is for this project. The next message can wait while a reply is still running.",
+  "latestVersionCode": 58,
+  "latestVersionName": "0.17.0",
+  "whatsNew": "Settings opens as a short list, and About the developer stays open. A missing permission asks with Fix now, Skip, or Don't remind me.",
   "block": "app",
   "message": "This build is retired. Install the latest version from the link below.",
   "package": "app.jasiri",
   "sideload": {
     "url": "https://jasiri-dl.benlester.me/jasiri-sideload.apk",
-    "sha256": "65dbfe9c7c7988add006935bafe023b729c720b4a159b18ed05ad01aefccce9a"
+    "sha256": "4a30a3a20bd0556b8d7bdece249d02f15add888e1213a7f376b825b445dd3fac"
   },
   "play": {
     "listed": false,
