@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jasiri marketplace</title>
+<meta name="description" content="Skills, automations, and plugins for Jasiri. Free items can be installed. Paid items wait for an account. Coming soon stays labeled coming soon.">
+<meta name="theme-color" content="#f6f1e7">
+<link rel="canonical" href="https://jasiri.benlester.me/marketplace/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/styles.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jasiri">
+<meta property="og:title" content="Jasiri marketplace">
+<meta property="og:description" content="Skills, automations, and plugins for Jasiri.">
+<meta property="og:url" content="https://jasiri.benlester.me/marketplace/">
+<meta property="og:image" content="https://jasiri.benlester.me/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Jasiri. Put your phone to work.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Jasiri marketplace">
+<meta name="twitter:description" content="Skills, automations, and plugins for Jasiri.">
+<meta name="twitter:image" content="https://jasiri.benlester.me/assets/og.png">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/icon.svg" alt="" width="34" height="34">Jasiri</a>
+    <nav aria-label="Main">
+      <a href="/#how">How it works</a>
+      <a href="/#today">What it does</a>
+      <a href="/marketplace/" aria-current="page">Marketplace</a>
+      <a href="/#faq">FAQ</a>
+    </nav>
+    <a class="btn small" href="https://jasiri-dl.benlester.me/jasiri-sideload.apk">Download</a>
+  </div>
+</header>
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Marketplace</span>
+      <h1>Skills, automations, and plugins.</h1>
+      <p>One list. Jasiri and this page read the same file. A free item can be installed from the app. A paid item stays on the card until there is an account. Coming soon stays labeled coming soon.</p>
+    </div>
+  </section>
+  <section style="padding-top:20px">
+    <div class="wrap" id="catalog"></div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="brand" href="/"><img src="/assets/icon.svg" alt="" width="34" height="34">Jasiri</a>
+        <p>An AI agent with its own Linux computer inside your Android phone. Free for individuals.</p>
+        <p>Built by <a href="https://benlester.me">Ben Lester</a>.</p>
+      </div>
+      <div>
+        <h4>Jasiri</h4>
+        <ul>
+          <li><a href="/#how">How it works</a></li>
+          <li><a href="/marketplace/">Marketplace</a></li>
+          <li><a href="https://jasiri-dl.benlester.me/jasiri-sideload.apk">Download</a></li>
+          <li><a href="https://github.com/lester-01/aaae/releases">All releases</a></li>
+          <li><a href="/check/">Check the APK</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/privacy/">Privacy</a></li>
+          <li><a href="/terms/">Terms and license</a></li>
+          <li><a href="mailto:contact@benlester.me">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal"><p>&copy; 2026 Ben Lester. All rights reserved.</p></div>
+  </div>
+</footer>
+<script>
+(function () {
+  var labels = { skill: "Skills", automation: "Automations", plugin: "Plugins" };
+  var root = document.getElementById("catalog");
+  fetch("/catalog.json").then(function (response) {
+    if (!response.ok) throw new Error("catalog");
+    return response.json();
+  }).then(function (data) {
+    var items = data.items || [];
+    var kinds = [];
+    items.forEach(function (item) {
+      if (kinds.indexOf(item.kind) < 0) kinds.push(item.kind);
+    });
+    kinds.forEach(function (kind) {
+      var group = document.createElement("div");
+      group.className = "group";
+      var heading = document.createElement("h2");
+      heading.textContent = labels[kind] || kind;
+      var grid = document.createElement("div");
+      grid.className = "grid";
+      items.filter(function (item) { return item.kind === kind; }).forEach(function (item) {
+        var card = document.createElement("article");
+        card.className = "card";
+        var chip = document.createElement("span");
+        chip.className = "chip" + (item.status === "coming-soon" ? " soon" : "");
+        chip.textContent = item.status === "coming-soon" ? "Coming soon" : (item.access === "paid" ? "Paid" : (item.source ? "Free" : "Already in Jasiri"));
+        var title = document.createElement("h3");
+        title.textContent = item.title || "";
+        var summary = document.createElement("p");
+        summary.textContent = item.summary || "";
+        card.appendChild(chip);
+        card.appendChild(title);
+        card.appendChild(summary);
+        if (item.owner && item.owner.name) {
+          var owner = document.createElement("p");
+          if (item.owner.url && String(item.owner.url).indexOf("https://") === 0) {
+            var link = document.createElement("a");
+            link.href = item.owner.url;
+            link.textContent = item.owner.name;
+            owner.appendChild(link);
+          } else {
+            owner.textContent = item.owner.name;
+          }
+          card.appendChild(owner);
+        }
+        if (item.access === "free" && item.status === "available" && item.source && String(item.source).indexOf("https://") === 0) {
+          var file = document.createElement("p");
+          var download = document.createElement("a");
+          download.href = item.source;
+          download.textContent = "Download";
+          file.appendChild(download);
+          card.appendChild(file);
+        }
+        grid.appendChild(card);
+      });
+      group.appendChild(heading);
+      group.appendChild(grid);
+      root.appendChild(group);
+    });
+  }).catch(function () {
+    var note = document.createElement("p");
+    note.textContent = "The list could not be loaded.";
+    root.appendChild(note);
+  });
+})();
+</script>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

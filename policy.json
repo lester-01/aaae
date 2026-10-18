@@ -2,15 +2,15 @@
   "_comment": "minVersionCode retires older clients. latestVersionCode is the optional banner. Sideload URL is the Cloudflare hop, never github.com.",
   "minVersionCode": 39,
   "minVersionName": "0.3.0",
-  "latestVersionCode": 59,
-  "latestVersionName": "0.18.0",
-  "whatsNew": "A script can call the same actions as the chat while Jasiri is open. The browser can keep more than one page on the same saved login.",
+  "latestVersionCode": 60,
+  "latestVersionName": "0.19.0",
+  "whatsNew": "An automation is a folder several chats can use, on a timer you turn on. Jasiri can stay ready after the phone starts.",
   "block": "app",
   "message": "This build is retired. Install the latest version from the link below.",
   "package": "app.jasiri",
   "sideload": {
     "url": "https://jasiri-dl.benlester.me/jasiri-sideload.apk",
-    "sha256": "72749af6688831d1fddc7a132588392e4b0e217a3867708ecf657593d1ef95c8"
+    "sha256": "f4bf6efc816e6561696a2343c100af197b35402344f2531db6af587f6a0f667e"
   },
   "play": {
     "listed": false,

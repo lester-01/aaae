@@ -1,0 +1,85 @@
+{
+  "items": [
+    {
+      "id": "write-automation",
+      "kind": "skill",
+      "title": "Write an automation",
+      "summary": "How to write a folder the chat can run on a schedule. Already in Jasiri.",
+      "owner": { "name": "Jasiri", "url": "https://jasiri.benlester.me" },
+      "access": "free",
+      "status": "available"
+    },
+    {
+      "id": "find-by-describing",
+      "kind": "plugin",
+      "title": "Find anything by describing it",
+      "summary": "Photos, videos, and documents on your phone are transcribed and indexed. Search them in plain language, like “the receipt from the plumber in March”.",
+      "owner": { "name": "Jasiri", "url": "https://jasiri.benlester.me" },
+      "access": "free",
+      "status": "coming-soon"
+    },
+    {
+      "id": "media-tagger",
+      "kind": "plugin",
+      "title": "Media tagger and organizer",
+      "summary": "Detect what belongs to which project or course and file it for you. A student’s whiteboard photos and lecture recordings, sorted by course and searchable. An engineer’s project media, grouped by project.",
+      "owner": { "name": "Jasiri", "url": "https://jasiri.benlester.me" },
+      "access": "free",
+      "status": "coming-soon"
+    },
+    {
+      "id": "file-manager",
+      "kind": "plugin",
+      "title": "AI-aware file manager",
+      "summary": "A file manager the agent understands and can work with, while you stay in control.",
+      "owner": { "name": "Jasiri", "url": "https://jasiri.benlester.me" },
+      "access": "free",
+      "status": "coming-soon"
+    },
+    {
+      "id": "notes",
+      "kind": "plugin",
+      "title": "Notes and to-dos, Obsidian compatible",
+      "summary": "Plain Markdown notes that follow you everywhere. The agent can read and write them if you let it.",
+      "owner": { "name": "Jasiri", "url": "https://jasiri.benlester.me" },
+      "access": "free",
+      "status": "coming-soon"
+    },
+    {
+      "id": "video-transcoder",
+      "kind": "plugin",
+      "title": "Video transcoder",
+      "summary": "Shrink HD videos without visible quality loss. Phones have no SD cards now, and cloud plans have limits.",
+      "owner": { "name": "Jasiri", "url": "https://jasiri.benlester.me" },
+      "access": "free",
+      "status": "coming-soon"
+    },
+    {
+      "id": "backups",
+      "kind": "plugin",
+      "title": "Backups",
+      "summary": "Back up the folders you choose to somewhere you choose.",
+      "owner": { "name": "Jasiri", "url": "https://jasiri.benlester.me" },
+      "access": "free",
+      "status": "coming-soon"
+    },
+    {
+      "id": "learning-labs",
+      "kind": "plugin",
+      "title": "Learning labs",
+      "summary": "Programming, Linux, and networking labs, installed in one tap. Practice from your pocket between classes.",
+      "owner": { "name": "Jasiri", "url": "https://jasiri.benlester.me" },
+      "access": "free",
+      "status": "coming-soon"
+    },
+    {
+      "id": "local-models",
+      "kind": "plugin",
+      "title": "Local AI models",
+      "summary": "Run smaller AI models on the phone for jobs that do not need a frontier model.",
+      "owner": { "name": "Jasiri", "url": "https://jasiri.benlester.me" },
+      "access": "free",
+      "status": "coming-soon"
+    }
+  ]
+}
