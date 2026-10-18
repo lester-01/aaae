@@ -4,7 +4,7 @@
       "id": "linux-home",
       "kind": "skill",
       "title": "Linux home",
-      "summary": "Tells the agent where this chat's files live, and not to guess when you skip a question. Already in Jasiri.",
+      "summary": "Tells the assistant where this chat's folder is, and not to guess when you skip a question. Already in Jasiri.",
       "owner": { "name": "Jasiri", "url": "https://jasiri.benlester.me" },
       "access": "free",
       "status": "available"
@@ -13,7 +13,7 @@
       "id": "write-automation",
       "kind": "skill",
       "title": "Write an automation",
-      "summary": "How to write a folder the chat can run on a schedule. Already in Jasiri.",
+      "summary": "Instructions for saving a task the chat can run on a schedule. Already in Jasiri.",
       "owner": { "name": "Jasiri", "url": "https://jasiri.benlester.me" },
       "access": "free",
       "status": "available"
@@ -22,7 +22,7 @@
       "id": "find-by-describing",
       "kind": "plugin",
       "title": "Find anything by describing it",
-      "summary": "Photos, videos, and documents on your phone are transcribed and indexed. Search them in plain language, like “the receipt from the plumber in March”.",
+      "summary": "Search photos, videos, and documents on your phone in plain language, like “the receipt from the plumber in March”. Not in the app yet. Today you can attach one photo in a chat, when the model can see images.",
       "owner": { "name": "Jasiri", "url": "https://jasiri.benlester.me" },
       "access": "free",
       "status": "coming-soon"
@@ -31,7 +31,7 @@
       "id": "media-tagger",
       "kind": "plugin",
       "title": "Media tagger and organizer",
-      "summary": "Detect what belongs to which project or course and file it for you. A student’s whiteboard photos and lecture recordings, sorted by course and searchable. An engineer’s project media, grouped by project.",
+      "summary": "Sort photos and recordings by project or course, then search them. Not in the app yet. Files you save in a chat folder stay in that folder.",
       "owner": { "name": "Jasiri", "url": "https://jasiri.benlester.me" },
       "access": "free",
       "status": "coming-soon"
@@ -40,7 +40,7 @@
       "id": "file-manager",
       "kind": "plugin",
       "title": "AI-aware file manager",
-      "summary": "A file manager the agent understands and can work with, while you stay in control.",
+      "summary": "A file manager the assistant can work with, while you stay in control. Not in the app yet. The assistant can already read and write files in the chat's folder.",
       "owner": { "name": "Jasiri", "url": "https://jasiri.benlester.me" },
       "access": "free",
       "status": "coming-soon"
@@ -49,7 +49,7 @@
       "id": "notes",
       "kind": "plugin",
       "title": "Notes and to-dos, Obsidian compatible",
-      "summary": "Plain Markdown notes that follow you everywhere. The agent can read and write them if you let it.",
+      "summary": "Plain Markdown notes that follow you from one device to another. Not in the app yet. Each chat already has a folder of files on this phone.",
       "owner": { "name": "Jasiri", "url": "https://jasiri.benlester.me" },
       "access": "free",
       "status": "coming-soon"
@@ -58,7 +58,7 @@
       "id": "video-transcoder",
       "kind": "plugin",
       "title": "Video transcoder",
-      "summary": "Shrink HD videos without visible quality loss. Phones have no SD cards now, and cloud plans have limits.",
+      "summary": "Shrink a large video and keep it watchable. Not in the app yet.",
       "owner": { "name": "Jasiri", "url": "https://jasiri.benlester.me" },
       "access": "free",
       "status": "coming-soon"
@@ -67,7 +67,7 @@
       "id": "backups",
       "kind": "plugin",
       "title": "Backups",
-      "summary": "Back up the folders you choose to somewhere you choose.",
+      "summary": "Copy the folders you choose to a place you choose, on a schedule. Not in the app yet. You can already copy a chat's folder out yourself.",
       "owner": { "name": "Jasiri", "url": "https://jasiri.benlester.me" },
       "access": "free",
       "status": "coming-soon"
@@ -76,7 +76,7 @@
       "id": "learning-labs",
       "kind": "plugin",
       "title": "Learning labs",
-      "summary": "Programming, Linux, and networking labs, installed in one tap. Practice from your pocket between classes.",
+      "summary": "Programming, Linux, and networking practice, installed from one button. Not in the app yet. You can already practice on the Linux system, from the assistant or the terminal.",
       "owner": { "name": "Jasiri", "url": "https://jasiri.benlester.me" },
       "access": "free",
       "status": "coming-soon"
@@ -85,7 +85,7 @@
       "id": "local-models",
       "kind": "plugin",
       "title": "Local AI models",
-      "summary": "Run smaller AI models on the phone for jobs that do not need a frontier model.",
+      "summary": "Run a smaller model on the phone for a job that does not need a large one. Not in the app yet. Today the assistant uses the provider you choose.",
       "owner": { "name": "Jasiri", "url": "https://jasiri.benlester.me" },
       "access": "free",
       "status": "coming-soon"

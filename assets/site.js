@@ -1,6 +1,6 @@
 (function () {
   var page = encodeURIComponent(location.origin + location.pathname);
-  var text = encodeURIComponent("Jasiri puts an AI agent and a real Linux system inside your Android phone.");
+  var text = encodeURIComponent("Jasiri is a pocket computer on your Android phone, with an assistant that can use it.");
 
   var nets = {
     linkedin: "https://www.linkedin.com/sharing/share-offsite/?url=" + page,
@@ -38,6 +38,28 @@
     });
   });
 
+  var menu = document.querySelector(".menu");
+  var nav = document.getElementById("site-nav");
+  if (menu && nav) {
+    var setOpen = function (open) {
+      nav.classList.toggle("is-open", open);
+      menu.setAttribute("aria-expanded", open ? "true" : "false");
+      menu.textContent = open ? "Close" : "Menu";
+    };
+    menu.addEventListener("click", function () {
+      setOpen(!nav.classList.contains("is-open"));
+    });
+    nav.addEventListener("click", function (event) {
+      if (event.target.closest("a")) setOpen(false);
+    });
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && nav.classList.contains("is-open")) {
+        setOpen(false);
+        menu.focus();
+      }
+    });
+  }
+
   var lines = document.querySelectorAll("[data-version-line]");
   if (lines.length && window.fetch) {
     fetch("/policy.json", { cache: "no-cache" })
@@ -45,7 +67,7 @@
       .then(function (p) {
         if (!p || !p.latestVersionName) return;
         lines.forEach(function (el) {
-          el.textContent = "Version " + p.latestVersionName + " \u00b7 Android 8 or later \u00b7 about 55 MB";
+          el.textContent = "Version " + p.latestVersionName + " \u00b7 Android 8 or later \u00b7 about 55\u00a0MB";
         });
       })
       .catch(function () {});

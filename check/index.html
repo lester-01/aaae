@@ -31,21 +31,23 @@
 <header class="top">
   <div class="wrap">
     <a class="brand" href="/"><img src="/assets/icon.svg" alt="" width="34" height="34">Jasiri</a>
-    <nav aria-label="Main">
+    <button class="menu" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" aria-label="Main">
       <a href="/#how">How it works</a>
       <a href="/#today">What it does</a>
       <a href="/marketplace/">Marketplace</a>
-      <a href="/#faq">FAQ</a>
+      <a href="/#editions">Editions</a>
+      <a href="/#faq">Questions</a>
     </nav>
     <a class="btn small" href="https://jasiri-dl.benlester.me/jasiri-sideload.apk">Download</a>
   </div>
 </header>
 <main id="main">
-  <section class="page-hero"><div class="wrap"><span class="eyebrow">Download</span><h1>Check the APK</h1></div></section>
+  <section class="page-hero"><div class="wrap"><h1>Check the APK</h1></div></section>
   <div class="wrap"><div class="prose">
 
-<p class="meta">Last updated 17 October 2026</p>
-<p>The download is one file, <code>jasiri-sideload.apk</code>. These checks compare that file with the published release. They do not send the file to Jasiri. This page sets no cookies and runs no analytics. The <a href="/privacy/">privacy</a> page says how the site is hosted.</p>
+<p class="meta">Last updated 18 October 2026</p>
+<p>The download is one file, <code>jasiri-sideload.apk</code>, about 55 MB. These checks compare that file with the published release. They do not send the file to Jasiri. This page sets no cookies and runs no analytics. The <a href="/privacy/">privacy</a> page says how the site is hosted.</p>
 
 <h2>File hash</h2>
 <p>Each release lists a SHA-256 checksum for the file. The same value is <code>sideload.sha256</code> in <a href="/policy.json">policy.json</a>, which is the small file installed copies of Jasiri read when they look for an update. Compute the hash of the file you downloaded and compare. The two strings should match, letter for letter.</p>
@@ -83,30 +85,34 @@
 <p>You can upload the file and see what public scanners report. VirusTotal runs that scan. Jasiri does not receive a copy.</p>
 <p><a href="https://www.virustotal.com/gui/file/f4bf6efc816e6561696a2343c100af197b35402344f2531db6af587f6a0f667e" target="_blank" rel="noopener">VirusTotal report for this download</a></p>
 <p><a href="https://www.virustotal.com/gui/home/upload" target="_blank" rel="noopener">Upload the APK</a></p>
-<p>The download is about 57 MB. That page can warn that a small upload stops at a few megabytes, and then accept the file anyway. A file this size uses VirusTotal’s large upload, which accepts up to 650 MB. That large upload is not a second page. It is the way a file over 32 MB is sent, including from the upload page above.</p>
+<p>The download is about 55 MB. That page can warn that a small upload stops at a few megabytes, and then accept the file anyway. A file this size uses VirusTotal&rsquo;s large upload, which accepts up to 650 MB. That large upload is not a second page. It is the way a file over 32 MB is sent, including from the upload page above.</p>
 
   </div></div>
 </main>
 <footer>
   <div class="wrap">
     <div class="cols">
-      <div>
+      <div class="promo">
         <a class="brand" href="/"><img src="/assets/icon.svg" alt="" width="34" height="34">Jasiri</a>
-        <p>An AI agent with its own Linux computer inside your Android phone. Free for individuals.</p>
-        <p>Built by <a href="https://benlester.me">Ben Lester</a>.</p>
+        <p>A pocket computer on your Android phone, with an assistant that can use it.</p>
+        <p>Ben Lester built Jasiri. He is a software and systems engineer. He works as a freelancer and a contractor, and he is open for work.</p>
+        <p><a class="site" href="https://benlester.me">benlester.me</a></p>
+        <p><a class="btn small" href="mailto:contact@benlester.me">Email Ben</a></p>
       </div>
       <div>
-        <h4>Jasiri</h4>
+        <h2>Jasiri</h2>
         <ul>
           <li><a href="/#how">How it works</a></li>
+          <li><a href="/#today">What it does</a></li>
           <li><a href="/marketplace/">Marketplace</a></li>
+          <li><a href="/#editions">Editions</a></li>
           <li><a href="https://jasiri-dl.benlester.me/jasiri-sideload.apk">Download</a></li>
           <li><a href="https://github.com/lester-01/aaae/releases">All releases</a></li>
           <li><a href="/check/">Check the APK</a></li>
         </ul>
       </div>
       <div>
-        <h4>Legal</h4>
+        <h2>Legal</h2>
         <ul>
           <li><a href="/privacy/">Privacy</a></li>
           <li><a href="/terms/">Terms and license</a></li>
@@ -116,7 +122,6 @@
     </div>
     <div class="legal">
       <p>&copy; 2026 Ben Lester. All rights reserved.</p>
-      
     </div>
   </div>
 </footer>
