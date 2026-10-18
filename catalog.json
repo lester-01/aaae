@@ -1,6 +1,15 @@
 {
   "items": [
     {
+      "id": "linux-home",
+      "kind": "skill",
+      "title": "Linux home",
+      "summary": "Tells the agent where this chat's files live, and not to guess when you skip a question. Already in Jasiri.",
+      "owner": { "name": "Jasiri", "url": "https://jasiri.benlester.me" },
+      "access": "free",
+      "status": "available"
+    },
+    {
       "id": "write-automation",
       "kind": "skill",
       "title": "Write an automation",
