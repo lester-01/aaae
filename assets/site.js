@@ -1,6 +1,6 @@
 (function () {
   var page = encodeURIComponent(location.origin + location.pathname);
-  var text = encodeURIComponent("Jasiri is a pocket computer on your Android phone, with an assistant that can use it.");
+  var text = encodeURIComponent("Jasiri for Android: A pocket computer, with an integrated AI assistant.");
 
   var nets = {
     linkedin: "https://www.linkedin.com/sharing/share-offsite/?url=" + page,
@@ -60,16 +60,4 @@
     });
   }
 
-  var lines = document.querySelectorAll("[data-version-line]");
-  if (lines.length && window.fetch) {
-    fetch("/policy.json", { cache: "no-cache" })
-      .then(function (r) { return r.ok ? r.json() : null; })
-      .then(function (p) {
-        if (!p || !p.latestVersionName) return;
-        lines.forEach(function (el) {
-          el.textContent = "Version " + p.latestVersionName + " \u00b7 Android 8 or later \u00b7 about 55\u00a0MB";
-        });
-      })
-      .catch(function () {});
-  }
 })();

@@ -4,7 +4,7 @@
       "id": "linux-home",
       "kind": "skill",
       "title": "Linux home",
-      "summary": "Tells the assistant where this chat's folder is, and not to guess when you skip a question. Already in Jasiri.",
+      "summary": "Tells the AI assistant where this chat's folder is, and not to guess when you skip a question. Already in Jasiri.",
       "owner": { "name": "Jasiri", "url": "https://jasiri.benlester.me" },
       "access": "free",
       "status": "available"
@@ -40,7 +40,7 @@
       "id": "file-manager",
       "kind": "plugin",
       "title": "AI-aware file manager",
-      "summary": "A file manager the assistant can work with, while you stay in control. Not in the app yet. The assistant can already read and write files in the chat's folder.",
+      "summary": "A file manager the AI assistant can work with, while you stay in control. Not in the app yet. The AI assistant can already read and write files in the chat's folder.",
       "owner": { "name": "Jasiri", "url": "https://jasiri.benlester.me" },
       "access": "free",
       "status": "coming-soon"
@@ -76,7 +76,7 @@
       "id": "learning-labs",
       "kind": "plugin",
       "title": "Learning labs",
-      "summary": "Programming, Linux, and networking practice, installed from one button. Not in the app yet. You can already practice on the Linux system, from the assistant or the terminal.",
+      "summary": "Programming, Linux, and networking practice, installed from one button. Not in the app yet. You can already practice on the Linux system, from the AI assistant or the terminal.",
       "owner": { "name": "Jasiri", "url": "https://jasiri.benlester.me" },
       "access": "free",
       "status": "coming-soon"
@@ -85,7 +85,7 @@
       "id": "local-models",
       "kind": "plugin",
       "title": "Local AI models",
-      "summary": "Run a smaller model on the phone for a job that does not need a large one. Not in the app yet. Today the assistant uses the provider you choose.",
+      "summary": "Run a smaller model on the phone for a job that does not need a large one. Not in the app yet. Today the AI assistant uses the provider you choose.",
       "owner": { "name": "Jasiri", "url": "https://jasiri.benlester.me" },
       "access": "free",
       "status": "coming-soon"

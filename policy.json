@@ -10,7 +10,8 @@
   "package": "app.jasiri",
   "sideload": {
     "url": "https://jasiri-dl.benlester.me/jasiri-sideload.apk",
-    "sha256": "f4bf6efc816e6561696a2343c100af197b35402344f2531db6af587f6a0f667e"
+    "sha256": "f4bf6efc816e6561696a2343c100af197b35402344f2531db6af587f6a0f667e",
+    "bytes": 57481762
   },
   "play": {
     "listed": false,

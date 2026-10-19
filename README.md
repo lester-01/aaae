@@ -5,32 +5,36 @@
 <h1 align="center">Jasiri</h1>
 
 <p align="center"><strong>Put your phone to work.</strong><br>
-An AI agent with its own Linux computer inside your Android phone.</p>
+A pocket computer, with an integrated AI assistant.</p>
 
 <p align="center">
   <a href="https://jasiri.benlester.me">Website</a> ·
   <a href="https://jasiri-dl.benlester.me/jasiri-sideload.apk">Download for Android</a> ·
   <a href="https://github.com/lester-01/aaae/releases">Releases</a> ·
-  <a href="https://jasiri.benlester.me/plugins/">Plugins</a>
+  <a href="https://jasiri.benlester.me/marketplace/">Marketplace</a>
 </p>
 
 ---
 
-Ask in plain English and the agent builds, fixes, organizes, and tests your ideas inside a real Linux system on your phone. Power user? Open the terminal and take the wheel. One app, nothing else to install.
+Jasiri is a pocket computer for Android with an integrated AI assistant. The AI assistant is built into the Linux system on the phone. It uses the same files and the same programs as the terminal. You can also open the terminal and do the work yourself. One app.
 
 ## Install
 
-1. Download the APK from the [latest release](https://github.com/lester-01/aaae/releases/latest) or the link above. Android 8 or later, 64-bit.
-2. Open it and allow the install when Android asks.
-3. Open Jasiri, add an AI key (OpenRouter, OpenAI, or any compatible service), and ask for something.
+Version: 0.19.0
+Download size: about 55 MB
+SHA-256: `f4bf6efc816e6561696a2343c100af197b35402344f2531db6af587f6a0f667e`
 
-Each release lists a SHA-256 checksum for the APK. Jasiri is not on Google Play yet.
+1. Download the APK from the [latest release](https://github.com/lester-01/aaae/releases/latest) or the link above.
+   - Android 8 or later, on a 64-bit phone
+   - Jasiri does not need a rooted phone
+2. Open it and allow the install when Android asks.
+3. Open Jasiri, add an AI API key from OpenRouter, OpenAI, or another compatible service, and ask for something. That service may charge you.
+
+Jasiri is not on Google Play yet.
 
 ## Check the APK
 
-The same steps are on the website: [jasiri.benlester.me/check](https://jasiri.benlester.me/check/).
-
-The release page lists the SHA-256 of `jasiri-sideload.apk`. After you download the file:
+The same steps are on the website: [jasiri.benlester.me/check](https://jasiri.benlester.me/check/). After you download the file:
 
 ```
 sha256sum jasiri-sideload.apk
@@ -42,29 +46,29 @@ On Windows:
 Get-FileHash jasiri-sideload.apk -Algorithm SHA256
 ```
 
-The hash should match the release notes and the `sideload.sha256` value in [`policy.json`](https://jasiri.benlester.me/policy.json).
+The hash should match the SHA-256 line in Install. PowerShell prints the hash in capitals. Lowercase is the same value.
 
 The signing certificate SHA-256 is `80db1f0580c90d3bb7ec1d06ef1daa9810e8e8e0bdab80ebde9a2ae7e1823202`. It does not change between versions. `keytool -printcert -jarfile jasiri-sideload.apk` prints that fingerprint with colons.
 
-The VirusTotal report for the current download is <https://www.virustotal.com/gui/file/a82ff8076d65e48a2668741349d14ab2db201457050acfbffbb2f7003f3e2bf7>. To upload a file yourself, use <https://www.virustotal.com/gui/home/upload>. The APK is about 57 MB. That page can warn about a few megabytes and still accept the file. VirusTotal’s large upload accepts up to 650 MB.
+You can look this file up on VirusTotal with the SHA-256 in Install, or upload it yourself at <https://www.virustotal.com/gui/home/upload>. The download size is the Download size line in Install. That page can warn about a few megabytes and still accept the file. VirusTotal’s large upload accepts up to 650 MB.
 
 ## What it does today
 
-- Builds sites, scripts, and tools from a description, runs them, and shows you.
-- Turns photos and documents into spreadsheets and notes (with a model that can see images).
-- Gives every chat its own project folder you can open and keep.
-- Includes a full terminal on the same system, with a normal package manager.
-- Works with your clipboard, and reachable over SSH from your laptop.
+- Builds sites, scripts, and tools from a description. The AI assistant writes them, runs them, and shows you the result.
+- Turns photos and documents into spreadsheets and notes, with a model that can see images.
+- Gives every chat its own folder you can open and keep.
+- Includes a full terminal on the same Linux system, with a normal package manager.
+- Works with your clipboard, and is reachable over SSH from your laptop.
 
-Plugins (search your media in plain language, notes, backups, video shrinking, learning labs) are planned. See the [plugin plans](https://jasiri.benlester.me/plugins/).
+Plugins, including search of your media in plain language, notes, backups, video shrinking, and learning labs, are planned. See the [marketplace](https://jasiri.benlester.me/marketplace/).
 
 ## Privacy
 
-No account, no ads, no analytics. Your project files stay on your phone. Messages go to the AI provider you choose, with your own key. Details: [privacy](https://jasiri.benlester.me/privacy/).
+No account, no ads, no analytics. Your chat folders stay on your phone. Messages go to the AI provider you choose, with your own AI API key. Details: [privacy](https://jasiri.benlester.me/privacy/).
 
 ## License
 
-Free for individuals, including for your own professional work. Teams and companies need a license. This is closed-source software distributed in binary form. See the [terms](https://jasiri.benlester.me/terms/), the [license summary](LICENSE), and the [third-party notices](NOTICES.md).
+The core is free to install and use, including for work. It may not be resold or hosted as a service. This is closed-source software distributed in binary form. See the [terms](https://jasiri.benlester.me/terms/), the [license summary](LICENSE), and the [third-party notices](NOTICES.md).
 
 ## Feedback
 
@@ -74,7 +78,7 @@ Bugs, ideas, and plugin requests are welcome through [issues](https://github.com
 
 This repository hosts the website at [jasiri.benlester.me](https://jasiri.benlester.me) and the release downloads. It does not contain the app's source code.
 
-`policy.json` is read by installed copies of the app to check for updates. Please do not move or rename it.
+`policy.json` is read by installed copies of the app to check for updates. Please do not move or rename it. Compare a download with the version, size, and SHA-256 in the sections above.
 
 ---
 
