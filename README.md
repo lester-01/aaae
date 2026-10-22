@@ -10,7 +10,7 @@ A pocket computer, with an integrated AI assistant.</p>
 <p align="center">
   <a href="https://jasiri.benlester.me">Website</a> ·
   <a href="https://jasiri-dl.benlester.me/jasiri-sideload.apk">Download for Android</a> ·
-  <a href="https://github.com/lester-01/aaae/releases">Releases</a> ·
+  <a href="https://github.com/lester-01/jasiri/releases">Releases</a> ·
   <a href="https://jasiri.benlester.me/marketplace/">Marketplace</a>
 </p>
 
@@ -24,7 +24,7 @@ Version: 0.21.0
 Download size: about 55 MB
 SHA-256: `06a15a05be8d0dfb61e7e8118073866e5f539439a77894ae6db9c1b4d3a5a6e2`
 
-1. Download the APK from the [latest release](https://github.com/lester-01/aaae/releases/latest) or the link above.
+1. Download the APK from the [latest release](https://github.com/lester-01/jasiri/releases/latest) or the link above.
    - Android 8 or later, on a 64-bit phone
    - Jasiri does not need a rooted phone
 2. Open it and allow the install when Android asks.
@@ -72,7 +72,7 @@ The core is free to install and use, including for work. It may not be resold or
 
 ## Feedback
 
-Bugs, ideas, and plugin requests are welcome through [issues](https://github.com/lester-01/aaae/issues) or at [contact@benlester.me](mailto:contact@benlester.me).
+Bugs, ideas, and plugin requests are welcome through [issues](https://github.com/lester-01/jasiri/issues) or at [contact@benlester.me](mailto:contact@benlester.me).
 
 ## About this repository
 
